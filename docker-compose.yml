@@ -1,0 +1,8 @@
+services:
+  node:
+    image: node:22.5
+    container_name: node
+    user: node
+    volumes:
+      - ./workspace:/app
+    command: tail -f /dev/null
